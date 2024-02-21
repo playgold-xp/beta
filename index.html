@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Playgold</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style type="text/css">
     body {
       font-family: 'Roboto', sans-serif;
@@ -80,51 +79,12 @@
         width: calc(100% - 40px);
       }
     }
-    .search-box {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-      max-width: 300px;
-    }
-
-    .search-box input[type="text"] {
-      padding: 10px 10px 10px 40px;
-      border-radius: 20px;
-      border: 1px solid #ddd;
-      background-color: #fff;
-      color: #333;
-      width: 100%;
-      font-size: 16px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
-
-    .search-box .fa-search {
-      position: absolute;
-      top: 50%;
-      left: 15px;
-      transform: translateY(-50%);
-      color: #aaa;
-      font-size: 16px;
-    }
-
-    .search-box input[type="text"]:focus {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      border-color: #bbb;
-    }
-
-    .search-box input[type="text"]:focus + .fa-search {
-      color: #333;
-    }
   </style>
 </head>
 <body>
 
   <header>
-  <div class="search-box">
     <input type="text" id="searchInput" oninput="searchProducts()" placeholder="Pesquise jogos...">
-    <i class="fas fa-search"></i>
-  </div>
   </header>
 
   <main>
